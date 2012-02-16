@@ -1,0 +1,350 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/b/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title></title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <!-- CSS: implied media=all -->
+  <!-- CSS concatenated and minified via ant build script-->
+  <!--<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>-->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- end CSS-->
+
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+  <!-- All JavaScript at the bottom, except for Modernizr / Respond.
+       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+</head>
+
+<body>
+	<div class="grTop">
+		
+	</div>
+	<div class="containerHead">
+		<div class="head">
+			<div class="headL">
+				<a href="" class="logo"><img src="img/logo.png" width="190" height="57" alt="Гуливер интерьер-центр" /></a>
+			</div>
+			<div class="headC">
+				<div class="phone">
+					+7(351) <span> 775 00 00</span>
+				</div>
+				<div class="blockSearch">
+					<form action="" method="post">
+						<input type="text" value="" />
+						<input type="submit" value="" />
+					</form>
+				</div>
+			</div>
+			<div class="headR">
+			</div>
+		</div>
+
+		<div class="menuHoriz">
+			<ul class="menuSmall">
+				<li><a href="">Новости</a></li>
+				<li><a href="">Об отеле</a></li>
+				<li><a href="">Отзывы</a></li>
+				<li><a href="">О Челябинске</a></li>
+				<li><a href="">Как добраться</a></li>
+			</ul>
+			<ul class="menuBig">
+				<li><a href="">Номера</a></li>
+				<li><a href="">Бронирование</a></li>
+				<li><a href="">Рестораны</a></li>
+				<li><a href="">Конференц-зал</a></li>
+				<li><a href="">Услуги</a></li>
+			</ul>
+		</div>
+		
+		<div class="headContent">
+			<div class="blBanner">
+				<div class="banner">
+					<div class="slider-wrapper theme-default">
+						<div class="ribbon"></div>
+						<div id="slider" class="nivoSlider">
+							<img src="img/img4.png" alt="" />
+							<img src="img/img4.png" alt="" />
+							<img src="img/img4.png" alt="" />
+							<img src="img/img4.png" alt="" />
+							<img src="img/img4.png" alt="" />
+						</div>
+						<div id="htmlcaption" class="nivo-html-caption">
+							<strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
+						</div>
+					</div>				
+				</div>
+				<div class="blockSocial">
+					<a href="">
+						<img src="img/icoTw.png" alt="" />
+					</a>
+					<a href="" class="icoFB">
+						<img src="img/icoFB.png" alt="" />
+					</a>
+					<a href="">
+						<img src="img/icoVK.png" alt="" />
+					</a>
+				</div>
+			</div>
+			
+			<!--<div class="blForm">
+				<p>Заполните форму и наш
+менеджер свяжется с вами
+для уточнения деталей:</p>
+				<form>
+					<input type="text" value="" placeholder="Дата заезда" />
+					<input type="text" value="" placeholder="Дата заезда" />
+					<div>
+					<select class="styled" style="position: absolute; opacity: 0; font-size: 11px; height: 24px;">
+						<option>количество человек</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+					</div>
+					<input type="text" value="" placeholder="Ф.И.О" />
+					<input type="text" value="" placeholder="e-mail" />
+					<input type="text" value="" placeholder="Контактный телефон" />
+					<input type="submit" value="Забронировать" />
+				</form>
+			</div>-->
+			<div class="blForm">
+				<p>Заполните форму и наш менеджер свяжется с вами для уточнения деталей:</p>
+				
+				<form action="http://www.hotel-meridian.ru/" method="post">
+				  	<input type="hidden" name="profile" value="room_small">
+				  	
+					<input type="text" value="" name="arrival" placeholder="Дата заезда" class="datepicker hasDatepicker" id="dp1329164319297">
+				  	<a href="#" style="position: absolute; height: 26px; right: 9px; width: 26px; margin-top: 2px;"></a> <span class="error">Это поле обязательно для заполнения.</span>
+					<input type="text" value="" name="exit" placeholder="Дата выезда" class="datepicker hasDatepicker" id="dp1329164319298"> <span class="error">Это поле обязательно для заполнения.</span>
+					<div>
+					<select class="styled" value="2" name="count" style="position: absolute; opacity: 0; font-size: 13px; height: 30px; ">
+						<option>количество человек</option>
+						<option>1</option>
+						<option selected="selected">2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+					</div>
+					<!--<input type="text" value="" placeholder="Дата заезда" />-->
+					<input type="text" name="nls" value="" placeholder="Ф.И.О"> <span class="error">Это поле обязательно для заполнения.</span>
+					<input type="text" value="" name="email" placeholder="e-mail"> <span class="error">Это поле обязательно для заполнения.</span>
+					<input type="text" value="" name="phone" placeholder="Контактный телефон"> <span class="error">Это поле обязательно для заполнения.</span>
+					<input type="submit" value="Забронировать">
+				</form>
+			</div>
+		</div>
+		
+		
+		<div class="bgHeadBottom">
+
+		</div>
+	</div>
+	<div id="container">
+		<div id="main" role="main">
+			<div class="nav">
+			
+			</div>
+			<div class="content">
+				<div class="bgContTop">
+				
+				</div>
+				<div class="typeItem">
+					<div class="colm">
+						<a href="" class="titleColm">Конференц-зал</a>
+						<div class="podlImg">
+							<img src="img/img1.png" alt="" />
+						</div>
+						<div class="logoItem">
+							<img src="img/logoChe.png" alt="" />
+						</div>
+						<div class="descItem">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</div>
+					</div>
+					<div class="colm">
+						<a href="" class="titleColm">Ресторан</a>
+						<div class="podlImg">
+							<img src="img/img2.png" alt="" />
+						</div>
+						<div class="logoItem">
+							<img src="img/logoil.png" alt="" />
+						</div>
+						<div class="descItem">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+						</div>
+					</div>
+					<div class="colm">
+						<a href="" class="titleColm">Суши-бар</a>
+						<div class="podlImg">
+							<img src="img/img3.png" alt="" />
+						</div>
+						<div class="logoItem">
+							<img src="img/logoEdo.png" alt="" />
+						</div>
+						<div class="descItem">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+						</div>
+					</div>				
+				</div>
+				
+				<div class="blGrey">
+					<h1>Новости</h1>
+					<div class="minNews">
+						<a href="" class="titleNews">Корпоративный вечер в "IL Gusto"!</a>
+						<div><span class="textGrey">2 фото</span> <span class="textGrey dateNews">15 октября</span></div>						
+						<p>Дорогие гости мы рады Вам предложить отличные условия для проведения....</p>
+					</div>
+					<div class="minNews">
+						<a href="" class="titleNews">Полупансион в отеле "Меридиан"</a>
+						<div><span class="textGrey">2 фото</span> <span class="textGrey dateNews">15 октября</span></div>						
+						<p>Уважаемые гости! Напоминаем Вам о найшей действующей программе “Полупансион” (завтрак+ужин)....</p>
+					</div>
+					<div class="minNews">
+						<a href="" class="titleNews">Наш отель посетила группа “Виагра”</a>
+						<div><span class="textGrey">2 фото</span> <span class="textGrey dateNews">15 октября</span></div>						
+						<p>Интересное интервью специально для нашего сайта.</p>
+					</div>
+					<div class="minNews">
+						<a href="" class="titleNews">Видеотрансляция</a>
+						<div><span class="textGrey">2 фото</span> <span class="textGrey dateNews">15 октября</span></div>						
+						<p>Открытие сайта 30 ноября. Теперь в новой оболочке</p>
+					</div>
+				</div>
+				
+				<div class="textBl">
+					<h1>Отель «Меридиан» является одной из лучших гостиниц Челябинска
+с наиболее удачным расположением. Отель находится в центре города и входит в комплекс Бизнес Дома "Спиридонов". Это дает возможность
+гостям отеля за короткое время добраться до любого района города.</h1>
+					<hr class="topHr" />
+					<p class="textItalic">Отель «Меридиан» является одной из лучших гостиниц Челябинска
+с наиболее удачным расположением. Отель находится в центре города и входит в комплекс Бизнес Дома "Спиридонов". Это дает возможность
+гостям отеля за короткое время добраться до любого района города.</p>
+					<hr class="botHr"/>
+				</div>
+				<div class="blTwoColm">
+					<div class="colm">
+					<div class="number">1.</div>
+					<p>Как и другие комфортабельные отели Челябинска, «Меридиан» предоставляет все необходимое для делового человека: 
+					номера повышенной комфортности, конференц-зал на 90 человек, бесплатный неограниченный WiFi, зона для проведения переговоров, 
+					итальянский ресторан  «IL Gusto», суши-бар «Эдо», салон красоты «Танго».</p>
+					</div>
+					<div class="colm">
+					<div class="number">2.</div>
+					<p>Бизнес-отель «Меридиан» предлагает своим гостям 62 номера: стандартные одноместные и двухместные, номера «люкс» и «сьют», 
+					а также единственный в своем роде номер «сьют» в Челябинске. Цены на проживание в отеле "Меридиан" приятно сочетаются с 
+					качеством обслуживания.</p>
+					</div>
+				</div>
+				<div class="blGreen">
+					<h1>По отзывам наших гостей, отель «Меридиан» назван одной из самых
+комфортабельных гостиниц города Челябинск, что заставляет нас и в
+дальнейшем поддерживать высокий уровень сервиса.</h1>
+				</div>
+				<div class="botBG">
+				
+				</div>
+			</div>
+		</div>
+	
+		<div class="empty"></div>
+	</div> <!--! end of #container -->
+	
+	<div class="footer">
+		<div class="grTop">
+		
+		</div>
+		<div class="footerContent">
+			<div class="menuFooter">
+				<ul>
+					<li><a href="">Номера</a></li>
+					<li><a href="">Рестораны</a></li>
+					<li><a href="">Конференц-зал</a></li>
+					<li><a href="">Бронирование номеров</a></li>
+					<li><a href="">Отель Мояк</a></li>
+				</ul>
+			</div>
+			<div class="dopMenuFooter">
+				<ul>
+					<li><a href="">Новости</a></li>
+					<li><a href="">О гостинице</a></li>
+					<li><a href="">Спецпредложения</a></li>
+				</ul>
+			</div>
+			<div class="developSite">
+				<div class="phone">
+					+7(351) <span> 775 00 00</span>
+				</div>
+				<div class="blockSearch">
+					<form action="" method="post">
+						<input type="text" value="" />
+						<input type="submit" value="" />
+					</form>
+				</div>
+				<div class="contactInfo">
+					<a href="">Россия, г.Челябинск, Проспект Ленина, 21а</a><br />
+					<span>+7 351 266 61 55  +7 351 775 56 82</span><br />
+					<a href="mailto:reserve@hotel-meridian.ru">reserve@hotel-meridian.ru</a>
+				</div>
+			</div>		
+		</div>
+	</div>
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline 
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>-->
+
+	<script src="js/libs/jquery-1.6.2.min.js"></script>
+	<script defer src="js/placeholder.js"></script>
+  <!-- scripts concatenated and minified via ant build script-->
+  <script defer src="js/customSelect.jquery.js"></script>
+  <script defer src="js/jquery.nivo.slider.pack.js"></script>
+  <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+  <script defer src="js/plugins.js"></script>
+  <script defer src="js/script.js"></script>
+  <!-- end scripts-->
+
+	<script src="js/PIE.js"></script>
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+  
+</body>
+</html>
